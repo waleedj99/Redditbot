@@ -24,7 +24,7 @@ def check():
         
         print("posted")#for my console for me to keep a count
     else:
-        comment.replyr("Pewdiepie has lost the battle as T-Series is "+str(a)+" ahead of us")
+        comment.reply("Pewdiepie has lost the battle as T-Series is "+str(a)+" ahead of us")
         print("posted") #for my console for me to keep a count
     
 searchkey = re.compile(r'!PewdStatus|!PewdBot|/u/PewdStatus')#my stuff

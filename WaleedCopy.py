@@ -32,7 +32,7 @@ reddit=praw.Reddit(client_id="2T256yp2KjjJOQ", #Reddit Api
                    client_secret="z3FUDDpgi6n4ZLPdm4Ze2kdnC5Q", #Reddit Api
                    user_agent="PewdStatus bot (by /u/ashfaq_haq)",
                    username="PewdStatus",
-                   password="lion123")
+                   password="pewdiebot")
 subreddit=reddit.subreddit('pythonforengineers')
 CommentList= []
 with open('file.txt') as file:

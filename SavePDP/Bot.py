@@ -20,7 +20,7 @@ def check():
     a=lis[0]-lis[1]
     
     if(a>0):
-        comment.reply("Pewdiepie is leading with " + str(a) + " nine year olds " + " \nPewdiepie : " + str(lis[0])+"  \nT-Series : " + str(lis[1]) + "   I am a bot summon me using ! Pewdbot")
+        comment.reply("Pewdiepie is leading with " + str(a) + " nine year olds " + " \nPewdiepie :  " + str(lis[0])+"  \nT-Series :  " + str(lis[1]) + "   \nI am a bot summon me using ! Pewdbot ")
         
         print("posted")#for my console for me to keep a count
     else:
@@ -33,7 +33,7 @@ reddit=praw.Reddit(client_id="2T256yp2KjjJOQ", #Reddit Api
                    user_agent="PewdStatus bot (by /u/ashfaq_haq)",
                    username="PewdStatus",
                    password="pewdiepiebot")
-subreddit = reddit.subreddit('pythonforengineers')
+subreddit = reddit.subreddit('PewdiepieSubmissions')
 CommentList= []
 with open('file.txt','a+') as file:
     content = file.readlines()

@@ -35,7 +35,7 @@ reddit=praw.Reddit(client_id="2T256yp2KjjJOQ", #Reddit Api
                    password="pewdiepiebot")
 subreddit=reddit.subreddit('PewdiepieSubmissions')
 CommentList= []
-with open('file.txt') as file:
+with open('file.txt','a+') as file:
     content = file.readlines()
     CommentList = [x.strip() for x in content]
     print(CommentList)

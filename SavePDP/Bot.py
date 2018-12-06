@@ -26,7 +26,7 @@ def check():
     else:
         comment.reply("Pewdiepie has lost the battle as T-Series is "+str(a)+" ahead of us")
         print("posted") #for my console for me to keep a count
-    print("\nI am a bot summon me by using !Pewdbot")
+    comment.reply("\nI am a bot summon me by using !Pewdbot")
     
 searchkey = re.compile(r'!PewdStatus|!PewdBot|/u/PewdStatus|!pewdstatus|!pewdbot|!Pewdbot|!Pewdstatus')#my stuff
 reddit=praw.Reddit(client_id="2T256yp2KjjJOQ", #Reddit Api

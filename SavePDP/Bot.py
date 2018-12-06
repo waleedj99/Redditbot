@@ -20,13 +20,12 @@ def check():
     a=lis[0]-lis[1]
     
     if(a>0):
-        comment.reply("Pewdiepie is leading with " + str(a) + " nine year olds " +" \nPewdiepie : "+ str(lis[0])+" \nT-Series : " +str(lis[1]))
+        comment.reply("Pewdiepie is leading with " + str(a) + " nine year olds " + " \nPewdiepie : " + str(lis[0])+" \nT-Series : " + str(lis[1])+"\nI am a bot summon me by using !Pewdbot")
         
         print("posted")#for my console for me to keep a count
     else:
-        comment.reply("Pewdiepie has lost the battle as T-Series is "+str(a)+" ahead of us")
+        comment.reply("Pewdiepie has lost the battle as T-Series is "+str(a)+" ahead of us \nI am a bot summon me by using !Pewdbot")
         print("posted") #for my console for me to keep a count
-    comment.reply("\nI am a bot summon me by using !Pewdbot")
     
 searchkey = re.compile(r'!PewdStatus|!PewdBot|/u/PewdStatus|!pewdstatus|!pewdbot|!Pewdbot|!Pewdstatus')#my stuff
 reddit=praw.Reddit(client_id="2T256yp2KjjJOQ", #Reddit Api

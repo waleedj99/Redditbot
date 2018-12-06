@@ -24,7 +24,7 @@ def check():
         
         print("posted")#for my console for me to keep a count
     else:
-        comment.reply("Pewdiepie has lost the battle as T-Series is "+str(a)+" ahead of us \nI am a bot summon me by using !Pewdbot")
+        comment.reply("Pewdiepie has lost the battle as T-Series is "+str(a)+" ahead of us \nI am a bot summon me by using ! Pewdbot")
         print("posted") #for my console for me to keep a count
     
 searchkey = re.compile(r'!PewdStatus|!PewdBot|/u/PewdStatus|!pewdstatus|!pewdbot|!Pewdbot|!Pewdstatus')#my stuff
@@ -33,7 +33,7 @@ reddit=praw.Reddit(client_id="2T256yp2KjjJOQ", #Reddit Api
                    user_agent="PewdStatus bot (by /u/ashfaq_haq)",
                    username="PewdStatus",
                    password="pewdiepiebot")
-subreddit=reddit.subreddit('PewdiepieSubmissions')
+subreddit=reddit.subreddit('pythonforengineers')
 CommentList= []
 with open('file.txt','a+') as file:
     content = file.readlines()

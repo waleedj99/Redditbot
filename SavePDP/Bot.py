@@ -20,7 +20,7 @@ def check():
     a=lis[0]-lis[1]
     
     if(a>0):
-        comment.reply("Pewdiepie is leading with " + str(a) + " 9 year olds " +" \nPewdiepie : "+ str(lis[0])+" \nT-Series : " +str(lis[1]))
+        comment.reply("Pewdiepie is leading with " + str(a) + " nine year olds " +" \nPewdiepie : "+ str(lis[0])+" \nT-Series : " +str(lis[1]))
         
         print("posted")#for my console for me to keep a count
     else:

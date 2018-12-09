@@ -23,7 +23,7 @@ def check():
     if(a1>0):
         if(a2>0):
              comment.reply("Pewdiepie is ahead of T-Series by " + "{:,}".format(a1) + " subs and requires only  "+"{:,}".format(a2)+" more subs to beat Youtube Sports!"+
-                      "  \nYoutube sports:"+" \t\t" + "{:,}".format(lis[2])+' \t '+" \nPewdiepie :\t\t" + "{:,}".format(lis[0])+'\t'+"  \nT-Series :\t\t" + "{:,}".format(lis[1])+'\t'+"\n\n I am a bot. \nFor further information please use '! help' (without the space) to mention the owners for any feedback ")
+                      "    \n\nYoutube sports:"+" \t\t" + "{:,}".format(lis[2])+' \t '+"    \n\nPewdiepie :\t\t" + "{:,}".format(lis[0])+'\t'+"    \n\nT-Series :\t\t" + "{:,}".format(lis[1])+'\t'+"\n\n   I am a bot.\nFor further information please use '! help' (without the space) to mention the owners for any feedback. ")
         else:
             a2=lis[0]-lis[2]
             comment.reply("Pewdiepie is now the king by being ahead of Youtube sports by" + "{:,}".format(a2) + " nine year olds. "+" \nPewdiepie :  " + "{:,}".format(lis[0])+"  \nYoutube sports:  " + "{:,}".format(lis[2])+" \nT-Series :  " + "{:,}".format(lis[1])+"\n\n\ Use \'! help' (without the space) to mention the owners for any feedback ")
@@ -51,7 +51,7 @@ reddit=praw.Reddit(client_id="2T256yp2KjjJOQ", #Reddit Api
                    user_agent="PewdStatus bot (by /u/ashfaq_haq)",
                    username="PewdStatus",
                    password="pewdiepiebot")
-subreddit = reddit.subreddit('PewdiepieSubmissions')
+subreddit = reddit.subreddit('pythonforengineers')
 CommentList= []
 Keyused = []
 with open('file.txt','a+') as file:

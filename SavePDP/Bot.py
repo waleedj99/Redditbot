@@ -54,7 +54,7 @@ def check():
     if(a1>0):
         if(a2>0):
              comment.reply("Pewdiepie is ahead of T-Series by " + "{:,}".format(a1) + " subs and requires only  "+"{:,}".format(a2)+" more subs to beat Youtube Sports!"+
-                      "    \n\nYoutube sports:"+" \t\t" + "{:,}".format(lis[2])+' \t '+"    \n\nPewdiepie :\t\t" + "{:,}".format(lis[0])+'\t'+"    \n\nT-Series :\t\t" + "{:,}".format(lis[1])+'\t'+"\n\n Use ! rewind(without the space for some fun)  \n\nI am a bot.\nFor further information please use '! help' (without the space) to mention the owners for any feedback. ")
+                      "    \n\nYoutube sports:"+" \t\t" + "{:,}".format(lis[2])+' \t '+"    \n\nPewdiepie :\t\t" + "{:,}".format(lis[0])+'\t'+"    \n\nT-Series :\t\t" + "{:,}".format(lis[1])+'\t'+"\n\n Use ! rewind(without the space for some fun)  \n\nI am a bot.\nFor further information please use '! help' (without the space).    PM me for any feedback. ")
         else:
             a2=lis[0]-lis[2]
             comment.reply("Pewdiepie is now the king by being ahead of Youtube sports by" + "{:,}".format(a2) + " nine year olds. "+" \nPewdiepie :  " + "{:,}".format(lis[0])+"  \nYoutube sports:  " + "{:,}".format(lis[2])+" \nT-Series :  " + "{:,}".format(lis[1])+"\n\n\ Use \'! help' (without the space) to mention the owners for any feedback ")
@@ -111,17 +111,15 @@ for comment in subreddit.stream.comments():
         file.close()
     if Help.search(comment.body) and comment not in CommentList:
         
-        KeyFile = open("keyfile.txt",'a+')
-        comment.reply("/u/waleedj99 and /u/ashfaq_haq")
-        file = open("file.txt",'a+')
+        comment.reply("!pewdbot->to get the subs of Pewdiepie and T-series    !rewind->To get the dislikes of Youtube Rewind")
+        file = open("helpfile.txt",'a+')
         file.writelines(str(comment)+"\n")
         CommentList.insert(0,comment)
         #print(Keyused)
         file.close()
         print("help command")
     if Rewind.search(comment.body) and comment not in CommentList:
-        KeyFile = open("keyfile.txt",'a+')
-        file = open("file.txt",'a+')
+        file = open("rewindfile.txt",'a+')
         file.writelines(str(comment)+"\n")
         Rate()
         file.close()

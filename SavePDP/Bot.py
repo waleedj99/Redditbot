@@ -111,15 +111,15 @@ for comment in subreddit.stream.comments():
         file.close()
     if Help.search(comment.body) and comment not in CommentList:
         
-        comment.reply("!pewdbot->to get the subs of Pewdiepie and T-series    !rewind->To get the dislikes of Youtube Rewind")
-        file = open("helpfile.txt",'a+')
+        comment.reply("!pewdbot->to get the subs of Pewdiepie and T-series   \n\n !rewind->To get the dislikes of Youtube Rewind")
+        file = open("file.txt",'a+')
         file.writelines(str(comment)+"\n")
         CommentList.insert(0,comment)
         #print(Keyused)
         file.close()
         print("help command")
     if Rewind.search(comment.body) and comment not in CommentList:
-        file = open("rewindfile.txt",'a+')
+        file = open("file.txt",'a+')
         file.writelines(str(comment)+"\n")
         Rate()
         file.close()

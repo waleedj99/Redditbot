@@ -28,10 +28,10 @@ def Rate():
     a2=ls[0]-ls[1]
     if(a1>0):
         comment.reply("The Youtube Rewind 2018 video still needs " +"{:,}".format(a1) + " to be the most disliked video."+ "\n\nThe rewind video has "+ "{:,} ".format(ls[0])+"dislikes."+
-    "\n\n\nBaby has " +"{:,} ".format(ls[1])+"dislikes."+" \n\nI am a bot.\nFor further information please use '! help' (without the space) to mention the owners for any feedback. ")
+    "\n\n\nBaby has " +"{:,} ".format(ls[1])+"dislikes."+" \n\nI am a bot.\nFor further information please use '! help' (without the space) to see the commands.PM me for any feedback. ")
         #print("Pewds is "+ str(a2) +"behind YT sports" )
     else:
-        comment.reply("The yotube rewind has the most dislikes.")
+        comment.reply("The youtube rewind has the most dislikes.")
     
     #("The rewind video has "+ "{:,} ".format(ls[0])+"dislikes."+)
     #"Baby has " +"{:,} ".format(ls[1])+"dislikes.")
@@ -57,7 +57,7 @@ def check():
              comment.reply("Pewdiepie is ahead of T-Series by " + "{:,}".format(a1) + " subs and requires only  "+"{:,}".format(a2)+" more subs to beat Youtube Sports!"+
                       "    \n\nYoutube sports:"+" \t\t" + "{:,}".format(lis[2])+' \t '+"    \n\nPewdiepie :\t\t" + "{:,}".format(lis[0])+'\t'+"    \n\nT-Series :\t\t" + "{:,}".format(lis[1])+'\t'+"\n\n Use ! rewind(without the space for some fun)  \n\nI am a bot.\nFor further information please use '! help' (without the space).    PM me for any feedback. ")
         else:
-            comment.reply("Pewdiepie has defeated Youtube Sports and needs more" + "{:,}".format(a3) + " to defeat Youtube Gaming "+" \n\nPewdiepie :  " + "{:,}".format(lis[0])+"  \n\nYoutube Gaming:  " + "{:,}".format(lis[3])+" \n\nT-Series :  " + "{:,}".format(lis[1])+"\n\n\ Use \'! help' (without the space) to mention the owners for any feedback ")
+            comment.reply("Pewdiepie has defeated Youtube Sports and needs more " + "{:,}".format(a3) + " to defeat Youtube Gaming "+" \n\nPewdiepie :  " + "{:,}".format(lis[0])+"  \n\nYoutube Gaming:  " + "{:,}".format(lis[3])+" \n\nT-Series :  " + "{:,}".format(lis[1])+"\n\n\ Use \'! help' (without the space) to mention the owners for any feedback ")
         
             
         #print("posted")#for my console for me to keep a count

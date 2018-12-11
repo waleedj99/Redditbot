@@ -27,8 +27,10 @@ def Rate():
     a1=ls[1]-ls[0]
     a2=ls[0]-ls[1]
     if(a1>0):
-        comment.reply("The Youtube Rewind 2018 video still needs " +"{:,}".format(a1) + " to be the most disliked video."+ "\n\nThe rewind video has "+ "{:,} ".format(ls[0])+"dislikes."+
-    "\n\n\nBaby has " +"{:,} ".format(ls[1])+"dislikes."+" \n\nI am a bot.\nFor further information please use '! help' (without the space) to see the commands.PM me for any feedback. ")
+        comment.reply("The Youtube Rewind 2018 video still needs " +"{:,}".format(a1) + " to be the most disliked video."+
+                      "\n\nThe rewind video has "+ "{:,} ".format(ls[0])+"dislikes."+
+    "\n\n\nBaby has " +"{:,} ".format(ls[1])+"dislikes."+
+                      " \n\nI am a bot.\nFor further information please use '! help' (without the space) to see the commands.PM me for any feedback. ")
         #print("Pewds is "+ str(a2) +"behind YT sports" )
     else:
         comment.reply("The youtube rewind has the most dislikes.")
@@ -53,11 +55,15 @@ def check():
     a2=lis[2]-lis[0]# differnce between Yt sports and pewds
     a3=lis[3]-lis[0]
     if(a1>0):
-        if(a2>0):
-             comment.reply("Pewdiepie is ahead of T-Series by " + "{:,}".format(a1) + " subs and requires only  "+"{:,}".format(a2)+" more subs to beat Youtube Sports!"+
-                      "    \n\nYoutube sports:"+" \t\t" + "{:,}".format(lis[2])+' \t '+"    \n\nPewdiepie :\t\t" + "{:,}".format(lis[0])+'\t'+"    \n\nT-Series :\t\t" + "{:,}".format(lis[1])+'\t'+"\n\n Use ! rewind(without the space for some fun)  \n\nI am a bot.\nFor further information please use '! help' (without the space).    PM me for any feedback. ")
+        if(a3>0):
+             comment.reply("Pewdiepie is ahead of T-Series by " + "{:,}".format(a1) + " subs and requires only  "+"{:,}".format(a3)+" more subs to beat Youtube Gaming!"+
+                      "    \n\nYoutube Gaming:"+" \t\t" + "{:,}".format(lis[3])+' \t '+"    \n\nPewdiepie :\t\t" + "{:,}".format(lis[0])+'\t'
+                           +"    \n\nT-Series :\t\t" + "{:,}".format(lis[1])+'\t'+
+                           "\n\n Use ! rewind(without the space for some fun)  \n\nI am a bot.\nFor further information please use '! help' (without the space).    PM me for any feedback. ")
         else:
-            comment.reply("Pewdiepie has defeated Youtube Sports and needs more " + "{:,}".format(a3) + " to defeat Youtube Gaming "+" \n\nPewdiepie :  " + "{:,}".format(lis[0])+"  \n\nYoutube Gaming:  " + "{:,}".format(lis[3])+" \n\nT-Series :  " + "{:,}".format(lis[1])+"\n\n\ Use \'! help' (without the space) to mention the owners for any feedback ")
+            comment.reply("Pewdiepie has defeated Youtube Sports and needs more " + "{:,}".format(a3) + " to defeat Youtube Gaming "+" \n\nPewdiepie :  " + "{:,}".format(lis[0])
+                          +"  \n\nYoutube Gaming:  " + "{:,}".format(lis[3])+" \n\nT-Series :  " + "{:,}".format(lis[1])+
+                          "\n\n\ Use \'! help' (without the space) to see more commands .PM me for feedback. ")
         
             
         #print("posted")#for my console for me to keep a count

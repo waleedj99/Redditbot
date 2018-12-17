@@ -33,7 +33,7 @@ def Rate():
                       " \n\nI am a bot.\nFor further information please use '! help' (without the space) to see the commands.PM me for any feedback. ")
         #print("Pewds is "+ str(a2) +"behind YT sports" )
     else:
-        comment.reply("The youtube rewind is the most disliked video of all time.")
+        comment.reply("The youtube rewind is the most disliked video of all time.    " + "Youtube Rewind has " + "{:,}".format(ls[0]) + "dislikes")
     
     #("The rewind video has "+ "{:,} ".format(ls[0])+"dislikes."+)
     #"Baby has " +"{:,} ".format(ls[1])+"dislikes.")

@@ -59,7 +59,7 @@ def check():
              comment.reply("Pewdiepie is ahead of T-Series by " + "{:,}".format(a1) + " subs and requires only  "+"{:,}".format(a3)+" more subs to beat Youtube Gaming!"+
                       "    \n\nYoutube Gaming:"+" \t\t" + "{:,}".format(lis[3])+' \t '+"    \n\nPewdiepie :\t\t" + "{:,}".format(lis[0])+'\t'
                            +"    \n\nT-Series :\t\t" + "{:,}".format(lis[1])+'\t'+
-                           "\n\n Use ! rewind(without the space for some fun)  \n\nI am a bot.\nFor further information please use '! help' (without the space).    PM me for any feedback. ")
+                           "\n\n Use ! rewind to know the dislikes of rewind   \n\nI am a bot.\nFor further information please use '! help' (without the space).    PM me for any feedback. ")
         else:
             comment.reply("Pewdiepie has defeated Youtube Sports and needs more " + "{:,}".format(a3) + " to defeat Youtube Gaming "+" \n\nPewdiepie :  " + "{:,}".format(lis[0])
                           +"  \n\nYoutube Gaming:  " + "{:,}".format(lis[3])+" \n\nT-Series :  " + "{:,}".format(lis[1])+

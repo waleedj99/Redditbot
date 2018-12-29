@@ -5,7 +5,7 @@ import json
 import urllib.request
 import re
 print("start")
-message="The bot will be closed down in the next week as its Free Heroku's Plan is coming to an end.In order to leave the community on a happy note ,we have added a new command ! like (use it without the spaces) which displays the difference between the likes of PewDiePie's Youtube Rewind video and Despacito . \n\n Thank you everyone for all the love the bot got. Looking forward to serve the 9 year olds in the future too. \n\n Send a PM to the bot if you are aware of an alternative to Heroku's free plan.\n\n"
+message="we have added a new command ! like (use it without the spaces) which displays the difference between the likes of PewDiePie's Youtube Rewind video and Despacito .\n\n"
 def Pew():
 	
 	id=["kJQP7kiw5Fk","By_Cn5ixYLg&t"]

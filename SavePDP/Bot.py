@@ -22,7 +22,7 @@ def Pew():
 	l1=up[0]-up[1]
 	l2=down[0]-down[1]
 	if(l1>0):
-		comment.reply(message + "Pewdiepies Youtube rewind needs more  " +"{:,}".format(l1) + " likes to defeat Despacito."+
+		comment.reply("Pewdiepies Youtube rewind needs more  " +"{:,}".format(l1) + " likes to defeat Despacito."+
                       "\n\n Despacito has  "+ "{:,} ".format(up[0])+" Likes."+
     "\n\n\nPewdiepie's Rewind has  " +"{:,} ".format(up[1])+" likes."+
                       " \n\nI am a bot.\nFor further information please use '! help' (without the space) to see the commands.PM me for any feedback. ")

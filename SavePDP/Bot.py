@@ -5,6 +5,32 @@ import json
 import urllib.request
 import re
 print("start")
+message="The bot will be closed down in the next week as its Free Heroku's Plan is coming to an end.In order to leave the community on a happy note ,we have added a new command ! like (use it without the spaces) which displays the difference between the likes of PewDiePie's Youtube Rewind video and Despacito . \n\n Thank you everyone for all the love the bot got. Looking forward to serve the 9 year olds in the future too. \n\n Send a PM to the bot if you are aware of an alternative to Heroku's free plan.\n\n"
+def Pew():
+	
+	id=["kJQP7kiw5Fk","By_Cn5ixYLg&t"]
+	key="AIzaSyD_wHoIHLe6yyYAbAZL4l6YDy_4iZd1vk8"
+	up=list()
+	down=list()
+	for id in id:
+		da=urllib.request.urlopen("https://www.googleapis.com/youtube/v3/videos?part=statistics&id="+id+"&key="+key).read()
+		su=down.append(json.loads(da)["items"][0]["statistics"]["dislikeCount"])
+		ad=up.append(json.loads(da)["items"][0]["statistics"]["likeCount"])
+
+	down=[ int(x) for x in down]
+	up=[int(x) for x in up]
+	l1=up[0]-up[1]
+	l2=down[0]-down[1]
+	if(l1>0):
+		comment.reply(message + "Pewdiepies Youtube rewind needs more  " +"{:,}".format(l1) + " likes to defeat Despacito."+
+                      "\n\n Despacito has  "+ "{:,} ".format(up[0])+" Likes."+
+    "\n\n\nPewdiepie's Rewind has  " +"{:,} ".format(up[1])+" likes."+
+                      " \n\nI am a bot.\nFor further information please use '! help' (without the space) to see the commands.PM me for any feedback. ")
+	else:
+		comment.reply("Pewdiepie's Rewind video has the most likes")
+
+       
+
 def Rate():
     id=["YbJOTdZBX1g","kffacxfA7G4"]
     #cha2=[p,t,sp]
@@ -27,7 +53,7 @@ def Rate():
     a1=ls[1]-ls[0]
     a2=ls[0]-ls[1]
     if(a1>0):
-        comment.reply("The Youtube Rewind 2018 video still needs " +"{:,}".format(a1) + " to be the most disliked video."+
+        comment.reply(message + "The Youtube Rewind 2018 video still needs " +"{:,}".format(a1) + " to be the most disliked video."+
                       "\n\nThe rewind video has "+ "{:,} ".format(ls[0])+"dislikes."+
     "\n\n\nBaby has " +"{:,} ".format(ls[1])+"dislikes."+
                       " \n\nI am a bot.\nFor further information please use '! help' (without the space) to see the commands.PM me for any feedback. ")
@@ -63,7 +89,7 @@ def check():
         else:
             comment.reply("Pewdiepie has defeated Youtube Sports and needs more " + "{:,}".format(a3) + " to defeat Youtube Gaming "+" \n\nPewdiepie :  " + "{:,}".format(lis[0])
                           +"  \n\nYoutube Gaming:  " + "{:,}".format(lis[3])+" \n\nT-Series :  " + "{:,}".format(lis[1])+
-                          "\n\n\ Use \'! help' (without the space) to see more commands .PM me for feedback. ")
+                          "\n\n\n Use \'! help' (without the space) to see more commands .PM me for feedback. ")
         
             
         #print("posted")#for my console for me to keep a count
@@ -83,6 +109,7 @@ def check():
 searchkey = re.compile(r'!PewdStatus|!PewdBot|/u/PewdStatus|!pewdstatus|!pewdbot|!Pewdbot|!Pewdstatus')#my stuff
 Rewind=re.compile(r'!Rewind |!rewind')
 Help=re.compile(r'!help|!Help')
+Pewd=re.compile(r'!like|!Like|!likes|!Likes')
 debugkey = re.compile(r'!pewdbotgetcommanddata')
 reddit=praw.Reddit(client_id="2T256yp2KjjJOQ", #Reddit Api
                    client_secret="z3FUDDpgi6n4ZLPdm4Ze2kdnC5Q", #Reddit Api
@@ -117,7 +144,7 @@ for comment in subreddit.stream.comments():
         file.close()
     if Help.search(comment.body) and comment not in CommentList:
         
-        comment.reply("! pewdbot->to get the subs of Pewdiepie and T-series   \n\n ! rewind->To get the dislikes of Youtube Rewind")
+        comment.reply("! pewdbot->to get the subs of Pewdiepie and T-series   \n\n ! rewind->To get the dislikes of Youtube Rewind  \n\n ! like-> To Get the Pewdiepie's  rewind vs Despacito Likes" )
         file = open("file.txt",'a+')
         file.writelines(str(comment)+"\n")
         CommentList.insert(0,comment)
@@ -130,4 +157,10 @@ for comment in subreddit.stream.comments():
         Rate()
         file.close()
         print("Dislike used")
+    if Pewd.search(comment.body) and comment not in CommentList:
+    	file=open("file.txt",'a+')
+    	file.writelines(str(comment)+"\n")
+    	Pew()
+    	file.close()
+    	print('Pewd REwind used')
 

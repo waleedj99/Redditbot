@@ -87,7 +87,7 @@ def check():
                            +"    \n\nT-Series :\t\t" + "{:,}".format(lis[1])+'\t'+
                            "\n\n Use ! rewind to know the dislikes of rewind   \n\nI am a bot.\nFor further information please use '! help' (without the space).    PM me for any feedback. ")
         else:
-            comment.reply("Pewdiepie has defeated Youtube Sports and needs more " + "{:,}".format(a3) + " to defeat Youtube Gaming "+" \n\nPewdiepie :  " + "{:,}".format(lis[0])
+            comment.reply("Pewdiepie has defeated Youtube Gaming and Pewdiepie is ahead of T-Series by " + "{: , }".format(a1) + " subs  " + "{: , }".format(a3) +" \n\nPewdiepie :  " + "{: , }".format(lis[0])
                           +"  \n\nYoutube Gaming:  " + "{:,}".format(lis[3])+" \n\nT-Series :  " + "{:,}".format(lis[1])+
                           "\n\n\n Use \'! help' (without the space) to see more commands .PM me for feedback. ")
         

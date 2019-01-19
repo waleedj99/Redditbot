@@ -80,6 +80,9 @@ def check():
     a1=lis[0]-lis[1]#differnce between pewds and T series
     a2=lis[2]-lis[0]# differnce between Yt sports and pewds
     a3=lis[3]-lis[0]
+    comment.reply("Pewdiepie has defeated Youtube Gaming and Pewdiepie is ahead of T-Series by " + "{: , }".format(a1) + " subs  " + "{: , }".format(a3) +" \n\nPewdiepie :  " + "{: , }".format(lis[0])
+                          +"  \n\nYoutube Gaming:  " + "{:,}".format(lis[3])+" \n\nT-Series :  " + "{:,}".format(lis[1])+
+                          "\n\n\n Use \'! help' (without the space) to see more commands .PM me for feedback. ")
     if(a1>0):
         comment.reply("Pewdiepie has defeated Youtube Gaming and Pewdiepie is ahead of T-Series by " + "{: , }".format(a1) + " subs  " + "{: , }".format(a3) +" \n\nPewdiepie :  " + "{: , }".format(lis[0])
                           +"  \n\nYoutube Gaming:  " + "{:,}".format(lis[3])+" \n\nT-Series :  " + "{:,}".format(lis[1])+

@@ -107,7 +107,7 @@ def check():
         comment.reply("Pewdiepie has lost the battle as T-Series is"+ "{:,}".format(a1)+" subs ahead")
         print("posted") #for my console for me to keep a count
     
-searchkey = re.compile(r'!PewdStatus|!PewdBot|/u/PewdStatus|!pewdstatus|!pewdbot|!Pewdbot|!Pewdstatus')#my stuff
+searchkey = re.compile(r'pvt|pewd|!PewdStatus|!PewdBot|/u/PewdStatus|!pewdstatus|!pewdbot|!Pewdbot|!Pewdstatus')#my stuff
 Rewind=re.compile(r'!Rewind |!rewind')
 Help=re.compile(r'!help|!Help')
 Pewd=re.compile(r'!like|!Like|!likes|!Likes')

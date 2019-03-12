@@ -104,7 +104,7 @@ def check():
         #comment.reply("Pewdiepie is now the king by being ahead of Youtube sports by" + "{:,}".format(a2) + " nine year olds. "+" \nPewdiepie :  " + "{:,}".format(lis[0])+"  \nYoutube sports:  " + "{:,}".format(lis[2])+" \nT-Series :  " + "{:,}".format(lis[1])+"\n\n\ Use \'! help' (without the space) to mention the owners for any feedback ")
         #print("postedS")
     else:
-        comment.reply("Pewdiepie has lost the battle as T-Series is"+ "{:,}".format(a1)+" subs ahead")
+        comment.reply("We can defeat them.Be strong .It doesn't matter how many times we fail ,what matters is how many times we rise\n\n  T-series"+ "{:,}".format(a1)+" subs ahead")
         print("posted") #for my console for me to keep a count
     
 searchkey = re.compile(r'!pvt|!pewd|!PewdStatus|!PewdBot|/u/PewdStatus|!pewdstatus|!pewdbot|!Pewdbot|!Pewdstatus')#my stuff

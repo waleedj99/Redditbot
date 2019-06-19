@@ -117,7 +117,7 @@ reddit=praw.Reddit(client_id="2T256yp2KjjJOQ", #Reddit Api
                    user_agent="PewdStatus bot (by /u/ashfaq_haq)",
                    username="PewdStatus",
                    password="pewdiepiebot")
-subreddit = reddit.subreddit('PewdiepieSubmissions')  #("pythonforengineers") 
+subreddit = reddit.subreddit('pythonforengineers')  #("pythonforengineers") 
 CommentList= []
 Keyused = []
 with open('file.txt','a+') as file:
